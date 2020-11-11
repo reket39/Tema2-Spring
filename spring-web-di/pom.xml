@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		 <start-class>com.springweb.di.app.SpringWebDiApplication</start-class>
 	</properties>
 
 	<dependencies>
