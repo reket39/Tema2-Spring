@@ -1,9 +1,12 @@
 package com.springweb.di.app.models.domain;
 
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
 
 @Component
+@RequestScope //Component es singleton y factura tiene que ser lo contrario para cada usuario un usuario diferente
 public class Cliente {
     
 	@Value("${cliente.nombre}")
